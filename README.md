@@ -2,10 +2,10 @@
 A clean and nice web portfolio for developed by Jaskarandeep Singh. That includes homepage,About page,skills page,education page, personal projects and Contact page. 
 
 # Preview
-![preview img](/previewimg.png)
+![preview img](/lightmode.png)
 
 # DarkMode
-![DarkMode img](/darkmode.png)
+![DarkMode img](/dmode.png)
 
 # ContactMe Page with beautiful toggle
 ![Toggle img](/toggle.png)
