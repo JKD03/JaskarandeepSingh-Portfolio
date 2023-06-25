@@ -748,6 +748,9 @@ img {
 .about__text{
   font-size: small;
 }
+.text1{
+  color: white;
+}
 }
 @media screen and (min-width: 576px) {
   .home {
