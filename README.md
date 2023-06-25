@@ -1,9 +1,14 @@
-# Portfolio Responsive Complete
-## [Watch it on youtube](https://youtu.be/AKNvTxWOdKw)
-### Portfolio responsive complete
-A clean and nice web portfolio for designer or developer. That includes almost everything you want to show. At first, your name, links to social networks and a great image. Then the About section displays more information about you. Then the list of Skills it offers. It also has a section where it shows some recent work. And at the bottom it has a form, and at the end with a footer.
+### Portfolio responsive complete with dark and light mode
+A clean and nice web portfolio for developed by Jaskarandeep Singh. That includes homepage,About page,skills page,education page, personal projects and Contact page. 
 
-Don't forget to join the channel for more videos like this.
-[Bedimcode](https://www.youtube.com/c/Bedimcode)
-
+#Preview
 ![preview img](/preview.png)
+
+#DarkMode
+![DarkMode img](/darkmode.png)
+
+#ContactMe Page with beautiful toggle
+![Toggle img](/toggle.png)
+
+#3D objects that follow the cursor
+![3D objects img](/3d.png)  
