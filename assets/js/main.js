@@ -1,4 +1,3 @@
-/*===== MENU SHOW =====*/ 
 const showMenu = (toggleId, navId) =>{
     const toggle = document.getElementById(toggleId),
     nav = document.getElementById(navId)
@@ -11,7 +10,6 @@ const showMenu = (toggleId, navId) =>{
 }
 showMenu('nav-toggle','nav-menu')
 
-/*==================== REMOVE MENU MOBILE ====================*/
 const navLink = document.querySelectorAll('.nav__link')
 
 function linkAction(){
@@ -21,7 +19,6 @@ function linkAction(){
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
-/*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 const sections = document.querySelectorAll('section[id]')
 
 function scrollActive(){
@@ -41,7 +38,6 @@ function scrollActive(){
 }
 window.addEventListener('scroll', scrollActive)
 
-// ====showscrollup====
 function scrollUp(){
     const scrollUp = document.getElementById('scroll-up');
     // When the scroll is higher than 560 viewport height, add the show-scroll class to the a tag with the scroll-top class
@@ -49,43 +45,33 @@ function scrollUp(){
 }
 window.addEventListener('scroll', scrollUp)
 
-/*===== DARK LIGHT =====*/
 const themeButton = document.getElementById('theme-button')
 const darkTheme = 'dark-theme'
 const iconTheme = 'uil-sun'
 
-// Previously selected topic (if user selected)
 const selectedTheme = localStorage.getItem('selected-theme')
 const selectedIcon = localStorage.getItem('selected-icon')
 
-// We obtain the current theme that the interface has by validating the dark-theme class
 const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light'
 const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'uil-moon' : 'uil-sun'
 
-// We validate if the user previously chose a topic
 if (selectedTheme) {
-  // If the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the dark
   document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
   themeButton.classList[selectedIcon === 'uil-moon' ? 'add' : 'remove'](iconTheme)
 }
 
-// Activate / deactivate the theme manually with the button
 themeButton.addEventListener('click', () => {
-    // Add or remove the dark / icon theme
     document.body.classList.toggle(darkTheme)
     themeButton.classList.toggle(iconTheme)
-    // We save the theme and the current icon that the user chose
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
 
-/*===== SCROLL REVEAL ANIMATION =====*/
 const sr = ScrollReveal({
     origin: 'top',
     distance: '60px',
     duration: 2000,
     delay: 200,
-//     reset: true
 });
 
 sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text',{}); 
@@ -105,31 +91,6 @@ function validateEmail(input) {
     }
   }
 
-// var btn = document.getElementById('btn');
-// btn.addEventListener('click',function(e){
-//     e.preventDefault()
-//     var name = document.getElementById('name').value;
-//     var email = document.getElementById('email').value;
-//     var message = document.getElementById('message').value;
-//     var body = 'name: '+name +'<br/> email: '+email +'<br/> message: '+message;
-//     console.log(name);
-//     console.log(email);
-//     console.log(message);
-//     Email.send({
-//         Host : "smtp.elasticemail.com",
-//         Username : "jkd.temporary@elasticmail.com",
-//         Password : "D1CAD768D91E6B90E2F349A288EED741E5AC",
-//         To : 'talk2jkds@gmail.com',
-//         From : email,
-//         Subject : "From Portfolio Website",
-//         Body : body
-//     }).then(
-//       message => alert(message)
-//     );
-// })
-
-
-
 function getRandomColor () {
     var hex = Math.floor(Math.random() * 0xFFFFFF);
     return "#" + ("000000" + hex.toString(16)).substr(-6);
@@ -146,33 +107,6 @@ function getRandomColor () {
   }
 
   window.onload = applyRandomColor;
-
-
-//   function sendEmail1(event) {
-//     e.preventDefault()
-//     var name = document.getElementById('name1').value;
-//     var email = document.getElementById('email1').value;
-//     var message = document.getElementById('message1').value;
-//     var body = 'name: '+name +'<br/> email: '+email +'<br/> message: '+message;
-//     console.log(name);
-//     console.log(email);
-//     console.log(message);
-//     Email.send({
-//         Host : "smtp.elasticemail.com",
-//         Username : "jkd.temporary@elasticmail.com",
-//         Password : "D1CAD768D91E6B90E2F349A288EED741E5AC",
-//         To : 'talk2jkds@gmail.com',
-//         From : email,
-//         Subject : "From Portfolio Website",
-//         Body : body
-//     }).then(
-//       message => alert(message)
-//     );
-
-//     // Reset the form
-//     //event.target.reset();
-// }
-
 
 
 var btn11 = document.getElementById('btn1');
@@ -208,17 +142,6 @@ btn11.addEventListener('click',function(e){
       message => alert("Message Send")
     );
     }
-    // Email.send({
-    //     Host : "smtp.elasticemail.com",
-    //     Username : "jkd.temporary@elasticmail.com",
-    //     Password : "D1CAD768D91E6B90E2F349A288EED741E5AC",
-    //     To : 'talk2jkds@gmail.com',
-    //     From : email,
-    //     Subject : "From Portfolio Website",
-    //     Body : body
-    // }).then(
-    //   // message => alert(message)
-    //   message => alert("Message Send")
-    // );
+    
 })
 
