@@ -1,6 +1,8 @@
 ### Portfolio responsive complete with dark and light mode
 A clean and nice web portfolio for developed by Jaskarandeep Singh. That includes homepage,About page,skills page,education page, personal projects and Contact page. 
 
+# working Link for the Website
+https://jkd03.github.io/JaskarandeepSingh-Portfolio/
 # Preview
 ![preview img](/lightmode.png)
 
